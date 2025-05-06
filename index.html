@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gustavo Gomes | ML/AI Engineer</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="#home">Gustavo Gomes</a>
+        </div>
+        <div class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="hero">
+        <div class="container">
+          <p class="intro-text">Hi, my name is</p>
+          <h1 class="name">GUSTAVO GOMES</h1>
+          <h2 class="title">I'm a Machine Learning and AI Engineer</h2>
+          <div class="cta-buttons">
+            <a href="#projects" class="btn primary">View Projects</a>
+            <a href="https://github.com/Gomes-Gustavo" class="btn primary"
+              >GitHub Profile</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about">
+        <div class="container">
+          <h2 class="section-title">About Me</h2>
+          <div class="about-content">
+            <div class="about-image">
+              <img src="assets/images/profile.jpg" alt="Gustavo Gomes" />
+            </div>
+            <div class="about-text">
+              <p>
+                I'm a Computer Engineering student at Instituto Mauá de
+                Tecnologia with a focus on artificial intelligence and machine
+                learning applications.
+              </p>
+              <p>
+                At university, I'm an active member of Dev Community Mauá where
+                I contribute as a backend developer, applying engineering
+                principles to real-world applications and enhancing my
+                collaborative skills.
+              </p>
+              <p>
+                My approach combines technical precision with creative
+                problem-solving. I believe the most powerful AI solutions aren't
+                just technically sound—they're intuitive, ethical, and designed
+                with real human needs in mind.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="projects">
+        <div class="container">
+          <h2 class="section-title">Projects</h2>
+
+          <!-- Category filter -->
+          <div class="project-filter">
+            <button class="filter-btn active" data-filter="all">
+              All Projects
+            </button>
+            <button class="filter-btn" data-filter="ml-ai">ML & AI</button>
+            <button class="filter-btn" data-filter="software">
+              Software Dev
+            </button>
+          </div>
+
+          <div class="projects-grid">
+            <!-- Project 1 - ML/AI -->
+            <div class="project-card" data-category="ml-ai">
+              <a
+                href="https://github.com/Gomes-Gustavo/credit-card-fraud-detection"
+                class="project-card-link"
+              >
+                <div class="project-image">
+                  <img
+                    src="assets/images/fraud_detection.jpg"
+                    alt="Fraud Detection System"
+                  />
+                </div>
+                <div class="project-content">
+                  <h3>Credit Card Fraud Detection</h3>
+                  <p>
+                    A machine learning system that identifies fraudulent credit
+                    card transactions. This project tackles extreme data
+                    imbalance, implements custom feature engineering, and
+                    provides model interpretability to explain detection
+                    decisions, making it suitable for real-world financial
+                    security applications.
+                  </p>
+                  <div class="project-tech">
+                    <span>Python</span>
+                    <span>scikit-learn</span>
+                    <span>XGBoost</span>
+                    <span>SHAP</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- Project 2 - ML/AI -->
+            <div class="project-card" data-category="ml-ai">
+              <a
+                href="https://github.com/Gomes-Gustavo/sentiment140-classifier"
+                class="project-card-link"
+              >
+                <div class="project-image">
+                  <img
+                    src="assets/images/nlp.jpg"
+                    alt="NLP Sentiment Analysis"
+                  />
+                </div>
+                <div class="project-content">
+                  <h3>Sentiment Analysis</h3>
+                  <p>
+                    A Twitter sentiment analysis system capable of classifying
+                    tweets as positive or negative with high accuracy. Built
+                    using Word2Vec embeddings and a custom Long Short Term
+                    Memory (LSTM) neural network, this project processes text
+                    data through a complete pipeline including cleaning,
+                    tokenization, and vectorization.
+                  </p>
+                  <div class="project-tech">
+                    <span>PyTorch</span>
+                    <span>Word2Vec</span>
+                    <span>LSTM</span>
+                    <span>NLP</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- Project 3 - ML/AI -->
+            <div class="project-card" data-category="ml-ai">
+              <a
+                href="https://github.com/Gomes-Gustavo/cnn-cifar10-classifier"
+                class="project-card-link"
+              >
+                <div class="project-image">
+                  <img
+                    src="assets/images/cifar10.jpg"
+                    alt="Image Classification System"
+                  />
+                </div>
+                <div class="project-content">
+                  <h3>Image Classification System</h3>
+                  <p>
+                    A deep learning image classification system that accurately
+                    categorizes images into 10 different classes using
+                    Convolutional Neural Networks (CNN). This project implements
+                    a complete machine learning workflow including data
+                    exploration, preprocessing with augmentation techniques,
+                    model architecture design, and comprehensive evaluation.
+                  </p>
+                  <div class="project-tech">
+                    <span>Python</span>
+                    <span>TensorFlow</span>
+                    <span>Keras</span>
+                    <span>CNN</span>
+                    <span>Computer Vision</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- Project 4 - Software -->
+            <div class="project-card" data-category="software">
+              <a
+                href="https://github.com/Gomes-Gustavo/portfolio"
+                class="project-card-link"
+              >
+                <div class="project-image">
+                  <img
+                    src="assets/images/portfolio.jpg"
+                    alt="Portfolio Website"
+                  />
+                </div>
+                <div class="project-content">
+                  <h3>Portfolio Website</h3>
+                  <p>
+                    A responsive personal portfolio website designed and
+                    implemented from scratch using modern front-end
+                    technologies. Features a clean, professional design with
+                    smooth navigation, interactive elements, and a project
+                    showcase. Built with a focus on accessibility, performance,
+                    and user experience.
+                  </p>
+                  <div class="project-tech">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+                    <span>Responsive Design</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- Reservation API -->
+            <div class="project-card" data-category="software">
+              <a
+                href="https://github.com/Maua-Dev/reservation_api"
+                class="project-card-link"
+              >
+                <div class="project-image">
+                  <img
+                    src="assets/images/reservation.jpg"
+                    alt="Mauá Reservation"
+                  />
+                </div>
+                <div class="project-content">
+                  <h3>Mauá Reservation</h3>
+                  <p>
+                    A web platform developed as part of Dev Community Mauá that
+                    enables students and staff to reserve sports courts at the
+                    CEAF (Centro de Esportes e Atividades Físicas). The system
+                    includes an administrative interface for CEAF staff to
+                    efficiently manage reservations, approve requests, and
+                    organize scheduling.
+                  </p>
+                  <div class="project-tech">
+                    <span>Python</span>
+                    <span>RESTful API</span>
+                    <span>NoSQL</span>
+                    <span>Docker</span>
+                    <span>AWS</span>
+                    <span>Apidog</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- Microservice User Project -->
+            <div class="project-card" data-category="software">
+              <a
+                href="https://github.com/Maua-Dev/reservation_mss_user"
+                class="project-card-link"
+              >
+                <div class="project-image">
+                  <img src="assets/images/user.jpg" alt="User Microservice" />
+                </div>
+                <div class="project-content">
+                  <h3>User Microservice</h3>
+                  <p>
+                    A specialized component of the Mauá Reservation platform
+                    responsible for user authentication, authorization, and
+                    profile management. Designed as an independent microservice
+                    to handle user-related operations.
+                  </p>
+                  <div class="project-tech">
+                    <span>Python</span>
+                    <span>RESTful API</span>
+                    <span>Microservices</span>
+                    <span>Authentication</span>
+                    <span>Docker</span>
+                    <span>AWS</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Skills Section -->
+      <section id="skills" class="skills">
+        <div class="container">
+          <h2 class="section-title">Skills</h2>
+          <div class="skills-container">
+            <div class="skills-category">
+              <h3>Languages</h3>
+              <ul class="skills-list">
+                <li><span>Python</span></li>
+                <li><span>SQL</span></li>
+                <li><span>R</span></li>
+                <li><span>C</span></li>
+                <li><span>C#</span></li>
+                <li><span>Java</span></li>
+                <li><span>JavaScript</span></li>
+              </ul>
+            </div>
+            <div class="skills-category">
+              <h3>Deep Learning</h3>
+              <ul class="skills-list">
+                <li><span>Neural Networks</span></li>
+                <li><span>Convolutional Neural Networks</span></li>
+                <li><span>Sequence Models</span></li>
+                <li><span>LSTMs & GRUs</span></li>
+                <li><span>Attention Models</span></li>
+                <li><span>Transfer Learning</span></li>
+                <li><span>Hyperparameter Tuning</span></li>
+              </ul>
+            </div>
+            <div class="skills-category">
+              <h3>Machine Learning</h3>
+              <ul class="skills-list">
+                <li><span>Classification Algorithms</span></li>
+                <li><span>Regression Algorithms</span></li>
+                <li><span>Clustering Algorithms</span></li>
+                <li><span>Association Rules</span></li>
+                <li><span>Dimensionality Reduction</span></li>
+                <li><span>Reinforcement Learning</span></li>
+                <li><span>Time Series Analysis</span></li>
+              </ul>
+            </div>
+            <div class="skills-category">
+              <h3>Data Science</h3>
+              <ul class="skills-list">
+                <li><span>Data Preprocessing</span></li>
+                <li><span>Feature Selection</span></li>
+                <li><span>Statistical Analysis</span></li>
+                <li><span>Outlier Detection</span></li>
+                <li><span>Dynamic Data Visualization</span></li>
+                <li><span>Imbalanced Data Handling</span></li>
+              </ul>
+            </div>
+            <div class="skills-category">
+              <h3>DevOps & Cloud</h3>
+              <ul class="skills-list">
+                <li><span>AWS</span></li>
+                <li><span>Docker</span></li>
+              </ul>
+            </div>
+            <div class="skills-category">
+              <h3>Databases</h3>
+              <ul class="skills-list">
+                <li><span>SQL Server</span></li>
+                <li><span>NoSQL</span></li>
+                <li><span>Database Design</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="social-links">
+            <a
+              href="https://github.com/Gomes-Gustavo"
+              target="_blank"
+              class="social-icon"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://linkedin.com/in/gustavo-gomes-581975333"
+              target="_blank"
+              class="social-icon"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <span class="email-container">
+              <i class="fas fa-envelope"></i>
+              <span class="email-text">gustavo.agomes@outlook.com</span>
+            </span>
+          </div>
+          <p class="copyright">&copy; 2025 Gustavo Gomes</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
