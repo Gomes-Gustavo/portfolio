@@ -545,3 +545,17 @@ footer {
     gap: 1.5rem;
   }
 }
+
+.freepik-credit {
+  font-size: 0.75em;
+  color: #888888;
+  text-align: center;
+  margin-top: 5px;
+}
+.freepik-credit a {
+  color: #888888;
+  text-decoration: none;
+}
+.freepik-credit a:hover {
+  text-decoration: underline;
+}
