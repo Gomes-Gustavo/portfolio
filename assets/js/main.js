@@ -106,20 +106,35 @@ document.addEventListener('DOMContentLoaded', function () {
   const projectCards = document.querySelectorAll('.project-card');
 
   if (filterBtns.length > 0 && projectCards.length > 0) {
+    projectCards.forEach((card) => {
+      card.addEventListener('transitionend', () => {
+        if (card.classList.contains('filtered-out')) {
+          card.classList.add('is-hidden');
+        }
+      });
+    });
+
     filterBtns.forEach((btn) => {
       btn.addEventListener('click', function () {
+        if (this.classList.contains('active')) {
+          return;
+        }
+
         filterBtns.forEach((filterBtn) => filterBtn.classList.remove('active'));
         this.classList.add('active');
         const filterValue = this.getAttribute('data-filter');
 
         projectCards.forEach((card) => {
-          const cardCategory = card.getAttribute('data-category');
+          const cardCategory = card.getAttribute('data-category') || '';
           const matchesFilter =
-            filterValue === 'all' || cardCategory === filterValue;
+            filterValue === 'all' ||
+            cardCategory.split(' ').includes(filterValue);
 
           if (matchesFilter) {
-            card.classList.remove('filtered-out');
-            card.style.display = 'flex';
+            card.classList.remove('is-hidden');
+            setTimeout(() => {
+              card.classList.remove('filtered-out');
+            }, 20);
           } else {
             card.classList.add('filtered-out');
           }
