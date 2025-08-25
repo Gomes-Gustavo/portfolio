@@ -58,5 +58,5 @@ The website is also deployed and accessible at [https://gomes-gustavo.github.io/
 ## Contact
 
 - **GitHub**: [Gomes-Gustavo](https://github.com/Gomes-Gustavo)
-- **LinkedIn**: [Gustavo Gomes](https://linkedin.com/in/gustavo-gomes-581975333)
+- **LinkedIn**: [Gustavo Gomes](https://www.linkedin.com/in/gustavo-alves-gomes/)
 - **Email**: gustavo.agomes@outlook.com
