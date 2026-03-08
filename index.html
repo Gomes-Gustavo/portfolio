@@ -1,94 +1,131 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gustavo Gomes | ML/AI Engineer</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Gustavo Gomes | AI &amp; Advanced Analytics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300;1,9..40,400&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <header>
-      <nav>
+    <!-- Header -->
+    <header id="main-header">
+      <nav class="nav-container">
         <div class="logo">
           <a href="#home">Gustavo Gomes</a>
         </div>
-        <div class="menu-toggle">
-          <i class="fas fa-bars"></i>
+        <div class="nav-right">
+          <ul class="nav-links">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+          </ul>
+          <button class="menu-toggle" aria-label="Toggle menu">
+            <span></span><span></span>
+          </button>
         </div>
-        <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-        </ul>
       </nav>
     </header>
 
     <main>
-      <!-- Hero Section -->
+      <!-- Hero -->
       <section id="home" class="hero">
+        <div class="hero-grid-bg"></div>
+        <div class="hero-glow"></div>
         <div class="container">
-          <h1 class="name">GUSTAVO GOMES</h1>
-          <h2 class="title">Machine Learning and AI Engineer</h2>
-          <div class="cta-buttons">
-            <a href="#projects" class="btn primary">View Projects</a>
-            <a href="https://github.com/Gomes-Gustavo" class="btn primary"
-              >GitHub Profile</a
-            >
+          <div class="hero-content">
+            <p class="hero-eyebrow">AI &amp; Advanced Analytics</p>
+            <h1 class="hero-name">
+              <span class="hero-name-line">GUSTAVO</span>
+              <span class="hero-name-line">GOMES</span>
+            </h1>
+            <div class="hero-divider"></div>
+            <p class="hero-bio">
+              Translating complex data into strategic insights. Designing
+              scalable ML and GenAI models to optimize processes and solve real
+              business challenges.
+            </p>
+            <div class="hero-cta">
+              <a href="#projects" class="btn btn-primary">View Projects</a>
+              <a
+                href="https://github.com/Gomes-Gustavo"
+                class="btn btn-ghost"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub Profile</a
+              >
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- About Section -->
+      <!-- About -->
       <section id="about" class="about">
         <div class="container">
-          <h2 class="section-title">About Me</h2>
-          <div class="about-content">
-            <div class="about-image">
+          <div class="section-header" data-aos="fade-up">
+            <h2 class="section-title">About</h2>
+          </div>
+          <div class="about-layout">
+            <div
+              class="about-image-wrap"
+              data-aos="fade-right"
+              data-aos-delay="100"
+            >
               <img src="assets/images/profile.jpg" alt="Gustavo Gomes" />
             </div>
-            <div class="about-text">
+            <div
+              class="about-text-wrap"
+              data-aos="fade-left"
+              data-aos-delay="200"
+            >
               <p>
-                I'm a Computer Engineering student at Instituto Mauá de
-                Tecnologia with a focus on artificial intelligence and machine
-                learning applications.
+                I am a Computer Engineering student at Instituto Mauá de
+                Tecnologia, focused on combining advanced analytics, robust
+                software engineering, and business strategy.
               </p>
               <p>
-                As part of my academic journey, I was a member of Dev Community
-                Mauá, where I contributed as a backend developer. This
-                experience allowed me to apply engineering principles to
-                real-world applications and enhance my collaborative skills in a
-                team environment.
+                Currently, I work in the AI and Advanced Analytics unit at
+                Visagio (VLabs), developing Machine Learning, NLP, and
+                Generative AI models to solve complex operational challenges. By
+                integrating computer science fundamentals and DevOps practices
+                into my workflow, I ensure that the solutions I build are
+                scalable and production-ready. My main goal is to translate raw
+                data into strategic assets, optimizing processes and driving
+                measurable value for large-scale clients.
               </p>
               <p>
-                My approach combines technical precision with creative
-                problem-solving. I believe the most powerful AI solutions aren't
-                just technically sound—they're intuitive, ethical, and designed
-                with real human needs in mind.
+                I believe the most powerful AI systems go beyond technical
+                complexity. They are designed to support executive
+                decision-making, solve real-world business problems, and deliver
+                direct impact.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Projects Section -->
+      <!-- Projects -->
       <section id="projects" class="projects">
         <div class="container">
-          <h2 class="section-title">Projects</h2>
+          <div class="section-header" data-aos="fade-up">
+            <h2 class="section-title">Selected Projects</h2>
+          </div>
 
-          <!-- Category filter -->
-          <div class="project-filter">
-            <button class="filter-btn active" data-filter="all">
-              All Projects
-            </button>
-            <button class="filter-btn" data-filter="ml-ai">ML & AI</button>
-            <button class="filter-btn" data-filter="software">
-              Software Dev
-            </button>
+          <div class="project-filter" data-aos="fade-up" data-aos-delay="100">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="ml-ai">ML &amp; AI</button>
+            <button class="filter-btn" data-filter="software">Software</button>
           </div>
 
           <div class="projects-grid">
@@ -97,6 +134,8 @@
               <a
                 href="https://github.com/Gomes-Gustavo/credit-card-fraud-detection"
                 class="project-card-link"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <div class="project-image">
                   <img
@@ -105,6 +144,9 @@
                   />
                 </div>
                 <div class="project-content">
+                  <div class="project-meta">
+                    <span class="project-category">ML / AI</span>
+                  </div>
                   <h3>Credit Card Fraud Detection</h3>
                   <p>
                     A machine learning solution that identifies fraudulent
@@ -129,6 +171,8 @@
               <a
                 href="https://github.com/Gomes-Gustavo/sentiment140-classifier"
                 class="project-card-link"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <div class="project-image">
                   <img
@@ -137,6 +181,9 @@
                   />
                 </div>
                 <div class="project-content">
+                  <div class="project-meta">
+                    <span class="project-category">NLP</span>
+                  </div>
                   <h3>Sentiment Analysis</h3>
                   <p>
                     A sentiment analysis solution capable of classifying tweets
@@ -161,6 +208,8 @@
               <a
                 href="https://github.com/Gomes-Gustavo/cnn-cifar10-classifier"
                 class="project-card-link"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <div class="project-image">
                   <img
@@ -169,6 +218,9 @@
                   />
                 </div>
                 <div class="project-content">
+                  <div class="project-meta">
+                    <span class="project-category">Computer Vision</span>
+                  </div>
                   <h3>CNN Image Classifier</h3>
                   <p>
                     A deep learning image classification solution that
@@ -195,6 +247,8 @@
               <a
                 href="https://github.com/Gomes-Gustavo/portfolio"
                 class="project-card-link"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <div class="project-image">
                   <img
@@ -203,6 +257,9 @@
                   />
                 </div>
                 <div class="project-content">
+                  <div class="project-meta">
+                    <span class="project-category">Frontend</span>
+                  </div>
                   <h3>Portfolio Website</h3>
                   <p>
                     A responsive personal portfolio website designed and
@@ -227,6 +284,8 @@
               <a
                 href="https://github.com/Gomes-Gustavo/medical-xray-yolo"
                 class="project-card-link"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <div class="project-image">
                   <img
@@ -235,6 +294,11 @@
                   />
                 </div>
                 <div class="project-content">
+                  <div class="project-meta">
+                    <span class="project-category"
+                      >Computer Vision / Healthcare</span
+                    >
+                  </div>
                   <h3>Medical X-Ray Finding Detection</h3>
                   <p>
                     An advanced deep learning project applying YOLOv8 to detect
@@ -259,6 +323,8 @@
               <a
                 href="https://github.com/Gomes-Gustavo/real-time-anomaly-detection"
                 class="project-card-link"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <div class="project-image">
                   <img
@@ -267,6 +333,9 @@
                   />
                 </div>
                 <div class="project-content">
+                  <div class="project-meta">
+                    <span class="project-category">MLOps</span>
+                  </div>
                   <h3>End-to-End Anomaly Detection API</h3>
                   <p>
                     A complete MLOps project demonstrating the full lifecycle of
@@ -293,6 +362,8 @@
               <a
                 href="https://github.com/Gomes-Gustavo/agentic-skill-mapper"
                 class="project-card-link"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <div class="project-image">
                   <img
@@ -301,6 +372,9 @@
                   />
                 </div>
                 <div class="project-content">
+                  <div class="project-meta">
+                    <span class="project-category">LLM / Agents</span>
+                  </div>
                   <h3>Agentic Career Advisor</h3>
                   <p>
                     A multi-agent AI system that generates personalized career
@@ -324,6 +398,8 @@
               <a
                 href="https://github.com/Maua-Dev/reservation_api"
                 class="project-card-link"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <div class="project-image">
                   <img
@@ -332,6 +408,9 @@
                   />
                 </div>
                 <div class="project-content">
+                  <div class="project-meta">
+                    <span class="project-category">Backend / Cloud</span>
+                  </div>
                   <h3>Mauá Reservation</h3>
                   <p>
                     A web platform developed as part of Dev Community Mauá that
@@ -357,11 +436,16 @@
               <a
                 href="https://github.com/Maua-Dev/reservation_mss_user"
                 class="project-card-link"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <div class="project-image">
                   <img src="assets/images/user.jpg" alt="User Microservice" />
                 </div>
                 <div class="project-content">
+                  <div class="project-meta">
+                    <span class="project-category">Microservices</span>
+                  </div>
                   <h3>User Microservice</h3>
                   <p>
                     A specialized component of the Mauá Reservation platform
@@ -383,81 +467,55 @@
           </div>
         </div>
       </section>
-      <!-- Skills Section -->
+      <!-- Skills -->
       <section id="skills" class="skills">
         <div class="container">
-          <h2 class="section-title">Skills</h2>
-          <div class="skills-container">
-            <div class="skills-category">
-              <h3>Languages</h3>
-              <ul class="skills-list">
-                <li><span>Python</span></li>
-                <li><span>SQL</span></li>
-                <li><span>R</span></li>
-                <li><span>C</span></li>
-                <li><span>C#</span></li>
-                <li><span>Java</span></li>
-                <li><span>JavaScript</span></li>
-              </ul>
+          <div class="section-header" data-aos="fade-up">
+            <h2 class="section-title">Skills &amp; Technologies</h2>
+          </div>
+          <div class="skills-grid">
+            <div class="skills-group" data-aos="fade-up" data-aos-delay="50">
+              <h3 class="skills-group-title">Languages</h3>
+              <div class="skills-tags">
+                <span>Python</span><span>SQL</span><span>R</span
+                ><span>JavaScript</span><span>C</span><span>Java</span>
+              </div>
             </div>
-            <div class="skills-category">
-              <h3>Deep Learning</h3>
-              <ul class="skills-list">
-                <li><span>Neural Networks</span></li>
-                <li><span>Convolutional Neural Networks</span></li>
-                <li><span>Sequence Models</span></li>
-                <li><span>LSTMs & GRUs</span></li>
-                <li><span>Attention Models</span></li>
-                <li><span>Transfer Learning</span></li>
-                <li><span>Hyperparameter Tuning</span></li>
-              </ul>
+            <div class="skills-group" data-aos="fade-up" data-aos-delay="100">
+              <h3 class="skills-group-title">Deep Learning &amp; GenAI</h3>
+              <div class="skills-tags">
+                <span>CNNs</span><span>Sequence Models</span
+                ><span>Transformers</span><span>Transfer Learning</span
+                ><span>LLMs</span><span>RAG</span><span>GANs</span
+                ><span>Prompt Engineering</span>
+              </div>
             </div>
-            <div class="skills-category">
-              <h3>Machine Learning</h3>
-              <ul class="skills-list">
-                <li><span>Classification Algorithms</span></li>
-                <li><span>Regression Algorithms</span></li>
-                <li><span>Clustering Algorithms</span></li>
-                <li><span>Association Rules</span></li>
-                <li><span>Dimensionality Reduction</span></li>
-                <li><span>Reinforcement Learning</span></li>
-                <li><span>Time Series Analysis</span></li>
-                <li><span>AI Agents</span></li>
-              </ul>
+            <div class="skills-group" data-aos="fade-up" data-aos-delay="150">
+              <h3 class="skills-group-title">Advanced Analytics</h3>
+              <div class="skills-tags">
+                <span>Time Series</span><span>AI Agents</span
+                ><span>Mathematical Optimization</span><span>Simulation</span
+                ><span>Predictive Modeling</span><span>Causal Inference</span
+                ><span>Dimensionality Reduction</span
+                ><span>Reinforcement Learning</span>
+              </div>
             </div>
-            <div class="skills-category">
-              <h3>Data Science</h3>
-              <ul class="skills-list">
-                <li><span>Data Preprocessing</span></li>
-                <li><span>Feature Selection</span></li>
-                <li><span>Statistical Analysis</span></li>
-                <li><span>Dynamic Data Visualization</span></li>
-                <li><span>Imbalanced Data Handling</span></li>
-              </ul>
+            <div class="skills-group" data-aos="fade-up" data-aos-delay="200">
+              <h3 class="skills-group-title">MLOps &amp; Cloud</h3>
+              <div class="skills-tags">
+                <span>AWS</span><span>Docker</span><span>SQL &amp; NoSQL</span
+                ><span>Model Deployment</span><span>CI/CD</span
+                ><span>FastAPI</span>
+              </div>
             </div>
-            <div class="skills-category">
-              <h3>Infrastructure & Data Management</h3>
-              <ul class="skills-list">
-                <li><span>AWS</span></li>
-                <li><span>Docker</span></li>
-                <li><span>SQL Server</span></li>
-                <li><span>NoSQL</span></li>
-                <li><span>Database Design</span></li>
-                <li><span>GitHub Actions</span></li>
-              </ul>
-            </div>
-            <div class="skills-category">
-              <h3>Main Libraries & Frameworks</h3>
-              <ul class="skills-list">
-                <li><span>Pandas</span></li>
-                <li><span>NumPy</span></li>
-                <li><span>Scikit-learn</span></li>
-                <li><span>TensorFlow</span></li>
-                <li><span>Keras</span></li>
-                <li><span>Matplotlib</span></li>
-                <li><span>Seaborn</span></li>
-                <li><span>PyTorch</span></li>
-              </ul>
+            <div class="skills-group" data-aos="fade-up" data-aos-delay="250">
+              <h3 class="skills-group-title">Libraries &amp; Frameworks</h3>
+              <div class="skills-tags">
+                <span>Pandas</span><span>NumPy</span><span>Scikit-learn</span
+                ><span>TensorFlow</span><span>PyTorch</span><span>Keras</span
+                ><span>LangChain</span><span>Streamlit</span
+                ><span>Matplotlib</span><span>Seaborn</span>
+              </div>
             </div>
           </div>
         </div>
@@ -466,35 +524,49 @@
 
     <footer>
       <div class="container">
-        <div class="footer-content">
-          <div class="social-links">
-            <a
-              href="https://github.com/Gomes-Gustavo"
-              target="_blank"
-              class="social-icon"
-            >
-              <i class="fab fa-github"></i>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/gustavo-alves-gomes/"
-              target="_blank"
-              class="social-icon"
-            >
-              <i class="fab fa-linkedin"></i>
-            </a>
-            <span class="email-container">
-              <i class="fas fa-envelope"></i>
-              <span class="email-text">gustavo.agomes@outlook.com</span>
-            </span>
+        <div class="footer-inner">
+          <div class="footer-left">
+            <p class="footer-name">Gustavo Gomes</p>
+            <p class="footer-tagline">AI &amp; Advanced Analytics</p>
           </div>
-          <p class="copyright">&copy; 2025 Gustavo Gomes</p>
+          <div class="footer-right">
+            <div class="social-links">
+              <a
+                href="https://github.com/Gomes-Gustavo"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/gustavo-alves-gomes/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="mailto:gustavo.agomes@outlook.com" aria-label="Email"
+                ><i class="fas fa-envelope"></i
+              ></a>
+            </div>
+            <p class="footer-email">gustavo.agomes@outlook.com</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Gustavo Gomes</p>
           <p class="freepik-credit">
-            <a href="http://www.freepik.com">Designed by Freepik</a>
+            <a
+              href="http://www.freepik.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Images by Freepik</a
+            >
           </p>
         </div>
       </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>
