@@ -1,4 +1,4 @@
-# ML/AI Engineer Portfolio
+# Portfolio
 
 This repository contains the source code for my personal portfolio website showcasing my projects and skills as a Machine Learning and AI Engineer.
 
