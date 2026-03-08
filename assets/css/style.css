@@ -395,17 +395,18 @@ header.scrolled {
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1px;
-  background: var(--border-subtle);
-  border: 1px solid var(--border-subtle);
+  gap: 1.5rem;
 }
 
 .project-card {
-  background: var(--bg);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
   position: relative;
   overflow: hidden;
   transition:
     background var(--trans),
+    border-color var(--trans),
     opacity 0.4s ease,
     transform 0.4s ease;
 }
@@ -431,6 +432,7 @@ header.scrolled {
 
 .project-card:hover {
   background: var(--bg-surface);
+  border-color: var(--accent);
 }
 
 .project-card.filtered-out {
